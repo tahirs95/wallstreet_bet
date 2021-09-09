@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: Arial;
+}
+.grid-container {
+  display: grid;
+  grid-template-columns:auto auto auto auto;
+  background-color: #1F2324;
+  padding: 10px;
+}
+.grid-item {
+  background-color: #363940;
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  margin: 2px;
+  padding: 10px;
+  font-size: 15px;
+  color:#957752;
+  text-align: center;
+  font-weight: bold;
+  
+}
+.Cl{
+    color:silver;
+}
+</style>
+</head>
+<body>
+
+<section>
+<div class="grid-container">
+ {% for key, value in dict.items() %}  
+  <div class="grid-item">{{key}} <strong class='Cl'>-</strong> <em class='Cl'>{{value}} Mentions</em> </div>
+{% endfor %}
+</div>
+</section>
+
+
+</body>
+</html>
