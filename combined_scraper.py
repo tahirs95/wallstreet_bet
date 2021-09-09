@@ -100,6 +100,8 @@ filename = dt.datetime.today().strftime("%d %m %Y")+".csv"
 print(f"Initializing operation... \nScraping tickers for date: {today} to date {tomorrow}")
 
 if __name__=="__main__":
+    print("After:", after)
+    print("Before:", before)
     wsb_scraper(after, before, filename)
     print("Scraping done successfully! \nRemoving 10 days old data from archive if exists...")
 
