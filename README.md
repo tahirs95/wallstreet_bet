@@ -8,4 +8,4 @@ Tech Stack used:
 
 <br>
 
-![Demo](demo.PNG)
+![demo](demo.png)
